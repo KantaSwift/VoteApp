@@ -9,21 +9,24 @@
 /* Begin PBXBuildFile section */
 		B2CF47232903F9C200759AF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF47222903F9C200759AF4 /* AppDelegate.swift */; };
 		B2CF47252903F9C200759AF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF47242903F9C200759AF4 /* SceneDelegate.swift */; };
-		B2CF47272903F9C200759AF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF47262903F9C200759AF4 /* ViewController.swift */; };
-		B2CF472A2903F9C200759AF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CF47282903F9C200759AF4 /* Main.storyboard */; };
+		B2CF47272903F9C200759AF4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF47262903F9C200759AF4 /* HomeViewController.swift */; };
 		B2CF472C2903F9C300759AF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2CF472B2903F9C300759AF4 /* Assets.xcassets */; };
 		B2CF472F2903F9C300759AF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CF472D2903F9C300759AF4 /* LaunchScreen.storyboard */; };
+		B2CF4795290646F000759AF4 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF4794290646F000759AF4 /* TeamViewController.swift */; };
+		B2CF47982906484800759AF4 /* Parchment in Frameworks */ = {isa = PBXBuildFile; productRef = B2CF47972906484800759AF4 /* Parchment */; };
+		B2CF479A290648AE00759AF4 /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF4799290648AE00759AF4 /* UIView-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B2CF471F2903F9C200759AF4 /* VoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CF47222903F9C200759AF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2CF47242903F9C200759AF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B2CF47262903F9C200759AF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B2CF47292903F9C200759AF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2CF47262903F9C200759AF4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B2CF472B2903F9C300759AF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2CF472E2903F9C300759AF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2CF47302903F9C300759AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2CF4794290646F000759AF4 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
+		B2CF4799290648AE00759AF4 /* UIView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2CF47982906484800759AF4 /* Parchment in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +60,56 @@
 		B2CF47212903F9C200759AF4 /* VoteApp */ = {
 			isa = PBXGroup;
 			children = (
+				B2CF475A2906358000759AF4 /* Model */,
+				B2CF47592906357C00759AF4 /* View */,
+				B2CF47582906357000759AF4 /* ViewModel */,
+				B2CF47572906356D00759AF4 /* Controller */,
+				B2CF47562906356A00759AF4 /* Utilies */,
 				B2CF47222903F9C200759AF4 /* AppDelegate.swift */,
 				B2CF47242903F9C200759AF4 /* SceneDelegate.swift */,
-				B2CF47262903F9C200759AF4 /* ViewController.swift */,
-				B2CF47282903F9C200759AF4 /* Main.storyboard */,
 				B2CF472B2903F9C300759AF4 /* Assets.xcassets */,
 				B2CF472D2903F9C300759AF4 /* LaunchScreen.storyboard */,
 				B2CF47302903F9C300759AF4 /* Info.plist */,
 			);
 			path = VoteApp;
+			sourceTree = "<group>";
+		};
+		B2CF47562906356A00759AF4 /* Utilies */ = {
+			isa = PBXGroup;
+			children = (
+				B2CF4799290648AE00759AF4 /* UIView-Extension.swift */,
+			);
+			path = Utilies;
+			sourceTree = "<group>";
+		};
+		B2CF47572906356D00759AF4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2CF47262903F9C200759AF4 /* HomeViewController.swift */,
+				B2CF4794290646F000759AF4 /* TeamViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B2CF47582906357000759AF4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2CF47592906357C00759AF4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2CF475A2906358000759AF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +128,9 @@
 			dependencies = (
 			);
 			name = VoteApp;
+			packageProductDependencies = (
+				B2CF47972906484800759AF4 /* Parchment */,
+			);
 			productName = VoteApp;
 			productReference = B2CF471F2903F9C200759AF4 /* VoteApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +159,9 @@
 				Base,
 			);
 			mainGroup = B2CF47162903F9C200759AF4;
+			packageReferences = (
+				B2CF47962906484800759AF4 /* XCRemoteSwiftPackageReference "Parchment" */,
+			);
 			productRefGroup = B2CF47202903F9C200759AF4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +178,6 @@
 			files = (
 				B2CF472F2903F9C300759AF4 /* LaunchScreen.storyboard in Resources */,
 				B2CF472C2903F9C300759AF4 /* Assets.xcassets in Resources */,
-				B2CF472A2903F9C200759AF4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +188,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2CF47272903F9C200759AF4 /* ViewController.swift in Sources */,
+				B2CF47272903F9C200759AF4 /* HomeViewController.swift in Sources */,
+				B2CF4795290646F000759AF4 /* TeamViewController.swift in Sources */,
 				B2CF47232903F9C200759AF4 /* AppDelegate.swift in Sources */,
+				B2CF479A290648AE00759AF4 /* UIView-Extension.swift in Sources */,
 				B2CF47252903F9C200759AF4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +199,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B2CF47282903F9C200759AF4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B2CF47292903F9C200759AF4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B2CF472D2903F9C300759AF4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +336,6 @@
 				INFOPLIST_FILE = VoteApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +363,6 @@
 				INFOPLIST_FILE = VoteApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +400,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B2CF47962906484800759AF4 /* XCRemoteSwiftPackageReference "Parchment" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rechsteiner/Parchment.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B2CF47972906484800759AF4 /* Parchment */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2CF47962906484800759AF4 /* XCRemoteSwiftPackageReference "Parchment" */;
+			productName = Parchment;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B2CF47172903F9C200759AF4 /* Project object */;
 }
