@@ -12,9 +12,19 @@
 		B2CF47272903F9C200759AF4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF47262903F9C200759AF4 /* HomeViewController.swift */; };
 		B2CF472C2903F9C300759AF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2CF472B2903F9C300759AF4 /* Assets.xcassets */; };
 		B2CF472F2903F9C300759AF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CF472D2903F9C300759AF4 /* LaunchScreen.storyboard */; };
-		B2CF4795290646F000759AF4 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF4794290646F000759AF4 /* TeamViewController.swift */; };
 		B2CF47982906484800759AF4 /* Parchment in Frameworks */ = {isa = PBXBuildFile; productRef = B2CF47972906484800759AF4 /* Parchment */; };
 		B2CF479A290648AE00759AF4 /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF4799290648AE00759AF4 /* UIView-Extension.swift */; };
+		B2CF479C29064E6000759AF4 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF479B29064E6000759AF4 /* PlayerCell.swift */; };
+		B2CF479E2906765400759AF4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF479D2906765400759AF4 /* ProfileView.swift */; };
+		B2CF47A02907B43D00759AF4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF479F2907B43D00759AF4 /* MainTabBarController.swift */; };
+		B2CF47A32907B4F000759AF4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF47A22907B4F000759AF4 /* ProfileViewController.swift */; };
+		B2CF47A52907B4FE00759AF4 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF47A42907B4FE00759AF4 /* SettingViewController.swift */; };
+		B2CF47A72908EA4300759AF4 /* PlayerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF47A62908EA4300759AF4 /* PlayerDataModel.swift */; };
+		B2CF4802290ABA2000759AF4 /* PlayerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF4801290ABA2000759AF4 /* PlayerHeaderView.swift */; };
+		B2CF4804290BC4B400759AF4 /* VoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF4803290BC4B400759AF4 /* VoteViewController.swift */; };
+		B2CF4829290FAE8400759AF4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF4828290FAE8400759AF4 /* LoginViewController.swift */; };
+		B2CF482B290FAEA900759AF4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF482A290FAEA900759AF4 /* RegisterViewController.swift */; };
+		B2CF4833290FD9F000759AF4 /* CustomAlertProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF4832290FD9F000759AF4 /* CustomAlertProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +35,18 @@
 		B2CF472B2903F9C300759AF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2CF472E2903F9C300759AF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2CF47302903F9C300759AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2CF4794290646F000759AF4 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		B2CF4799290648AE00759AF4 /* UIView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extension.swift"; sourceTree = "<group>"; };
+		B2CF479B29064E6000759AF4 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		B2CF479D2906765400759AF4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B2CF479F2907B43D00759AF4 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		B2CF47A22907B4F000759AF4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B2CF47A42907B4FE00759AF4 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		B2CF47A62908EA4300759AF4 /* PlayerDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDataModel.swift; sourceTree = "<group>"; };
+		B2CF4801290ABA2000759AF4 /* PlayerHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerHeaderView.swift; sourceTree = "<group>"; };
+		B2CF4803290BC4B400759AF4 /* VoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteViewController.swift; sourceTree = "<group>"; };
+		B2CF4828290FAE8400759AF4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B2CF482A290FAEA900759AF4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B2CF4832290FD9F000759AF4 /* CustomAlertProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +105,10 @@
 		B2CF47572906356D00759AF4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B2CF47262903F9C200759AF4 /* HomeViewController.swift */,
-				B2CF4794290646F000759AF4 /* TeamViewController.swift */,
+				B2CF479F2907B43D00759AF4 /* MainTabBarController.swift */,
+				B2CF4827290FAE6600759AF4 /* Authentication */,
+				B2CF47A12907B4A800759AF4 /* Core */,
+				B2CF4820290FA8D800759AF4 /* General */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -101,6 +123,10 @@
 		B2CF47592906357C00759AF4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B2CF479B29064E6000759AF4 /* PlayerCell.swift */,
+				B2CF4801290ABA2000759AF4 /* PlayerHeaderView.swift */,
+				B2CF479D2906765400759AF4 /* ProfileView.swift */,
+				B2CF4832290FD9F000759AF4 /* CustomAlertProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,8 +134,60 @@
 		B2CF475A2906358000759AF4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B2CF47A62908EA4300759AF4 /* PlayerDataModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B2CF47A12907B4A800759AF4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B2CF47262903F9C200759AF4 /* HomeViewController.swift */,
+				B2CF47A22907B4F000759AF4 /* ProfileViewController.swift */,
+				B2CF47A42907B4FE00759AF4 /* SettingViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B2CF4820290FA8D800759AF4 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				B2CF4821290FA8FD00759AF4 /* Home */,
+				B2CF4823290FA91300759AF4 /* Profile */,
+				B2CF4824290FA91E00759AF4 /* Setting */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		B2CF4821290FA8FD00759AF4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B2CF4803290BC4B400759AF4 /* VoteViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B2CF4823290FA91300759AF4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		B2CF4824290FA91E00759AF4 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		B2CF4827290FAE6600759AF4 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				B2CF4828290FAE8400759AF4 /* LoginViewController.swift */,
+				B2CF482A290FAEA900759AF4 /* RegisterViewController.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,10 +266,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2CF4833290FD9F000759AF4 /* CustomAlertProfileView.swift in Sources */,
+				B2CF4804290BC4B400759AF4 /* VoteViewController.swift in Sources */,
 				B2CF47272903F9C200759AF4 /* HomeViewController.swift in Sources */,
-				B2CF4795290646F000759AF4 /* TeamViewController.swift in Sources */,
+				B2CF47A02907B43D00759AF4 /* MainTabBarController.swift in Sources */,
+				B2CF47A72908EA4300759AF4 /* PlayerDataModel.swift in Sources */,
+				B2CF479C29064E6000759AF4 /* PlayerCell.swift in Sources */,
 				B2CF47232903F9C200759AF4 /* AppDelegate.swift in Sources */,
+				B2CF47A52907B4FE00759AF4 /* SettingViewController.swift in Sources */,
 				B2CF479A290648AE00759AF4 /* UIView-Extension.swift in Sources */,
+				B2CF47A32907B4F000759AF4 /* ProfileViewController.swift in Sources */,
+				B2CF482B290FAEA900759AF4 /* RegisterViewController.swift in Sources */,
+				B2CF4802290ABA2000759AF4 /* PlayerHeaderView.swift in Sources */,
+				B2CF479E2906765400759AF4 /* ProfileView.swift in Sources */,
+				B2CF4829290FAE8400759AF4 /* LoginViewController.swift in Sources */,
 				B2CF47252903F9C200759AF4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
