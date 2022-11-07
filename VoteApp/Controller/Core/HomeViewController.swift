@@ -33,11 +33,7 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        playerTableView.dataSource = self
-        playerTableView.delegate = self
-        
-        let headerView = PlayerHeaderView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 330))
-        playerTableView.tableHeaderView = headerView
+        setupHeaderView()
         setupViews()
         setupConstraint()
         configureNavigationBar()
@@ -48,11 +44,18 @@ final class HomeViewController: UIViewController {
         playerTableView.frame = view.frame
     }
     
+    private func setupHeaderView() {
+        let headerView = PlayerHeaderView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 330))
+        playerTableView.tableHeaderView = headerView
+    }
+    
     private func configureNavigationBar() {
         navigationItem.title = "12/18 あけぼのやまサッカー大会"
     }
     
     private func setupViews() {
+        playerTableView.dataSource = self
+        playerTableView.delegate = self
         view.addSubview(playerTableView)
         view.addSubview(voteButton)
     }

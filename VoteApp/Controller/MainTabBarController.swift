@@ -9,16 +9,16 @@ import UIKit
 
 final class MainTabBarController: UITabBarController {
     
-    private let homeVC = templateNavigationController(selectedImage: "house.fill", unSelectedImage: "house", rootViewController: HomeViewController())
-    private let profileVC = templateNavigationController(selectedImage: "person.fill", unSelectedImage: "person", rootViewController: ProfileViewController())
-    private let settingVC = templateNavigationController(selectedImage: "gearshape.fill", unSelectedImage: "gearshape", rootViewController: SettingViewController())
+    private lazy var homeVC = templateNavigationController(selectedImage: "house.fill", unSelectedImage: "house", rootViewController: HomeViewController())
+    private lazy var profileVC = templateNavigationController(selectedImage: "person.fill", unSelectedImage: "person", rootViewController: ProfileViewController())
+    private lazy var settingVC = templateNavigationController(selectedImage: "gearshape.fill", unSelectedImage: "gearshape", rootViewController: SettingViewController())
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setViewControllers([homeVC, profileVC, settingVC], animated: true)
     }
     
-    private static func templateNavigationController(selectedImage: String, unSelectedImage: String, rootViewController: UIViewController) -> UINavigationController {
+    private func templateNavigationController(selectedImage: String, unSelectedImage: String, rootViewController: UIViewController) -> UINavigationController {
         let navigationController = UINavigationController(rootViewController: rootViewController)
         navigationController.tabBarItem.selectedImage = UIImage(systemName: selectedImage)
         navigationController.tabBarItem.image = UIImage(systemName: unSelectedImage)

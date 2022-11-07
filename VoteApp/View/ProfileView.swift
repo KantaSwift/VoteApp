@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfileView {
+final class ProfileView {
     
     struct Constants {
         static let backgroundAlphaTo: CGFloat = 0.6

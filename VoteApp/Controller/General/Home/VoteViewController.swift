@@ -7,7 +7,7 @@
 
 import UIKit
 
-class VoteViewController: UIViewController {
+final class VoteViewController: UIViewController {
     
     private let voteTableView: UITableView = {
         let tableView = UITableView()
@@ -17,8 +17,6 @@ class VoteViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        voteTableView.dataSource = self
-        voteTableView.delegate = self
         setupViews()
     }
     
@@ -28,6 +26,8 @@ class VoteViewController: UIViewController {
     }
     
     private func setupViews() {
+        voteTableView.dataSource = self
+        voteTableView.delegate = self
         view.addSubview(voteTableView)
     }
 }

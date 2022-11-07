@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PlayerHeaderView: UIView {
+final class PlayerHeaderView: UIView {
     
     private enum TeamName: String {
         case team1 = "イナズマイレブン"
@@ -155,9 +155,10 @@ class PlayerHeaderView: UIView {
     }
     
     private func configureTeamSection() {
-        for (i, button) in teamSectionStackView.arrangedSubviews.enumerated() {
+        for (index, button) in teamSectionStackView.arrangedSubviews.enumerated() {
             guard let button = button as? UIButton else { return }
-            if i == selectedTab {
+            button.tag = index
+            if index == selectedTab {
                 button.tintColor = .label
             } else {
                 button.tintColor = .secondaryLabel
@@ -169,13 +170,13 @@ class PlayerHeaderView: UIView {
         guard let teamName = sender.titleLabel?.text else { return }
         switch teamName {
         case TeamName.team1.rawValue:
-            selectedTab = 0
+            selectedTab = sender.tag
         case TeamName.team2.rawValue:
-            selectedTab = 1
+            selectedTab = sender.tag
         case TeamName.team3.rawValue:
-            selectedTab = 2
+            selectedTab = sender.tag
         case TeamName.team4.rawValue:
-            selectedTab = 3
+            selectedTab = sender.tag
         default:
             print("index out of range")
         }

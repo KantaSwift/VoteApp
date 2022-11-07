@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CustomAlertProfileView: UIView {
+final class CustomAlertProfileView: UIView {
     
     
     private let nameLabel: UILabel = {
