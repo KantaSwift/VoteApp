@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2C62D9829246A0A0044D5C9 /*  OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C62D9729246A0A0044D5C9 /*  OnboardingViewController.swift */; };
 		B2CF47232903F9C200759AF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF47222903F9C200759AF4 /* AppDelegate.swift */; };
 		B2CF47252903F9C200759AF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF47242903F9C200759AF4 /* SceneDelegate.swift */; };
 		B2CF47272903F9C200759AF4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF47262903F9C200759AF4 /* HomeViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B2C62D9729246A0A0044D5C9 /*  OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " OnboardingViewController.swift"; sourceTree = "<group>"; };
 		B2CF471F2903F9C200759AF4 /* VoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CF47222903F9C200759AF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2CF47242903F9C200759AF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		B2CF4827290FAE6600759AF4 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				B2C62D9729246A0A0044D5C9 /*  OnboardingViewController.swift */,
 				B2CF4828290FAE8400759AF4 /* LoginViewController.swift */,
 				B2CF482A290FAEA900759AF4 /* RegisterViewController.swift */,
 			);
@@ -278,6 +281,7 @@
 				B2CF47A32907B4F000759AF4 /* ProfileViewController.swift in Sources */,
 				B2CF482B290FAEA900759AF4 /* RegisterViewController.swift in Sources */,
 				B2CF4802290ABA2000759AF4 /* PlayerHeaderView.swift in Sources */,
+				B2C62D9829246A0A0044D5C9 /*  OnboardingViewController.swift in Sources */,
 				B2CF479E2906765400759AF4 /* ProfileView.swift in Sources */,
 				B2CF4829290FAE8400759AF4 /* LoginViewController.swift in Sources */,
 				B2CF47252903F9C200759AF4 /* SceneDelegate.swift in Sources */,
