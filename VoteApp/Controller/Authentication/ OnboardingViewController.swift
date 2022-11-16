@@ -93,7 +93,8 @@ final class OnboardingViewController: UIViewController {
     }
     
     @objc private func createAccountButtonDidTap() {
-        print(#function)
+        let registerVC = RegisterViewController()
+        navigationController?.pushViewController(registerVC, animated: true)
     }
     
     @objc private func loginButtonDidTap() {
