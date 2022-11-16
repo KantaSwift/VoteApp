@@ -21,7 +21,6 @@ class PlayerCell: UITableViewCell {
     
     private let playerNameLabel: UILabel = {
         let label = UILabel()
-//        label.text = "上條栞汰"
         label.font = .systemFont(ofSize: 18, weight: .heavy)
         label.textColor = .label
         return label
@@ -29,26 +28,58 @@ class PlayerCell: UITableViewCell {
     
     private let backNumberLabel: UILabel = {
         let label = UILabel()
-//        label.text = "7"
         label.font = .systemFont(ofSize: 18, weight: .heavy)
+        label.textAlignment = .center
         label.textColor = .label
+        return label
+    }()
+    
+    private let backNumberTitleLabel: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 18, weight: .bold)
+        label.textAlignment = .center
+        label.text = "背番号"
+        label.textColor = .secondaryLabel
         return label
     }()
     
     private let positionLabel: UILabel = {
         let label = UILabel()
-//        label.text = "MF"
         label.font = .systemFont(ofSize: 18, weight: .heavy)
+        label.textAlignment = .center
         label.textColor = .label
         return label
     }()
     
     private let commentLabel: UILabel = {
         let label = UILabel()
-//        label.text = "よろしくお願いします。"
-        label.font = .systemFont(ofSize: 14, weight: .regular)
+        label.font = .systemFont(ofSize: 14, weight: .bold)
         label.textColor = .secondaryLabel
         return label
+    }()
+    
+    private lazy var playerInfoStackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [backNumberLabel, playerNameLabel, positionLabel])
+        stackView.axis = .horizontal
+        stackView.distribution = .fillProportionally
+        stackView.spacing = 10
+        return stackView
+    }()
+    
+    private lazy var stackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [playerInfoStackView, commentLabel])
+        stackView.axis = .vertical
+        stackView.distribution = .fillEqually
+        stackView.spacing = 10
+        return stackView
+    }()
+    
+    private lazy var totalStackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [profileImageView, stackView])
+        stackView.axis = .horizontal
+        stackView.distribution = .fillProportionally
+        stackView.spacing = 20
+        return stackView
     }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -58,20 +89,12 @@ class PlayerCell: UITableViewCell {
     }
     
     private func setupViews() {
-        contentView.addSubview(profileImageView)
-        contentView.addSubview(playerNameLabel)
-        contentView.addSubview(backNumberLabel)
-        contentView.addSubview(positionLabel)
-        contentView.addSubview(commentLabel)
+        contentView.addSubview(totalStackView)
     }
     
     private func setupConstraint() {
-        profileImageView.anchor(left: leftAnchor, centerY: centerYAnchor, leftPadding: 10)
         profileImageView.anchor(width:40, height: 40)
-        playerNameLabel.anchor(top: topAnchor, left: profileImageView.rightAnchor, topPadding: 18, leftPadding: 15)
-        backNumberLabel.anchor(left: playerNameLabel.rightAnchor, centerY: playerNameLabel.centerYAnchor, leftPadding: 10)
-        positionLabel.anchor(left: backNumberLabel.rightAnchor, centerY: backNumberLabel.centerYAnchor, leftPadding: 10)
-        commentLabel.anchor(top: playerNameLabel.bottomAnchor, left: playerNameLabel.leftAnchor, topPadding: 10)
+        totalStackView.anchor(left: leftAnchor,right: rightAnchor, centerY: centerYAnchor, leftPadding: 10, rightPadding: 150)
     }
     
     func configure(playerData: PlayerDataModel) {

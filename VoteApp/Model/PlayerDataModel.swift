@@ -9,10 +9,10 @@ import UIKit
 
 struct PlayerDataModel {
     
-    let playerName: String?
-    let backNumber: String?
-    let position: String?
-    let comment: String?
+    let playerName: String
+    let backNumber: String
+    let position: String
+    let comment: String
 }
 
 extension PlayerDataModel {

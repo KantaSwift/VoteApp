@@ -167,19 +167,7 @@ final class PlayerHeaderView: UIView {
     }
     
     @objc private func teamSectionDidTap(_ sender: UIButton) {
-        guard let teamName = sender.titleLabel?.text else { return }
-        switch teamName {
-        case TeamName.team1.rawValue:
-            selectedTab = sender.tag
-        case TeamName.team2.rawValue:
-            selectedTab = sender.tag
-        case TeamName.team3.rawValue:
-            selectedTab = sender.tag
-        case TeamName.team4.rawValue:
-            selectedTab = sender.tag
-        default:
-            print("index out of range")
-        }
+        selectedTab = sender.tag
     }
     
     private func configureUnBasicConstraint() {
@@ -199,6 +187,7 @@ final class PlayerHeaderView: UIView {
         
         NSLayoutConstraint.activate(indicatorConstraint)
     }
+    
     
     private func setupConstraint() {
         titleLabel.anchor(top: topAnchor, left: leftAnchor, right: rightAnchor)
