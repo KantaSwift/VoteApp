@@ -6,8 +6,12 @@
 //
 
 import UIKit
+import Combine
 
 final class RegisterViewController: UIViewController {
+    
+    private var registerViewModel = AuthenticationViewModel()
+    private var subscription = Set<AnyCancellable>()
     
     private let registerTitleLabel: UILabel = {
         let label = UILabel()
@@ -55,6 +59,15 @@ final class RegisterViewController: UIViewController {
         view.backgroundColor = .systemBackground
         setupViews()
         setupConstraint()
+        bindViews()
+    }
+    
+    private func bindViews() {
+        emailTextField.addTarget(self, action: #selector(emailTextFieldDidChange), for: .editingChanged)
+        passwordTextField.addTarget(self, action: #selector(passwordTextFieldDidChange), for: .editingChanged)
+        registerViewModel.$isAuthenticationFromValid.sink { [weak self] validationState in
+            self?.registerButton.isEnabled = validationState
+        }.store(in: &subscription)
     }
     
     private func setupViews() {
@@ -66,7 +79,17 @@ final class RegisterViewController: UIViewController {
         registerButton.anchor(height: 60)
     }
     
+    @objc private func emailTextFieldDidChange() {
+        registerViewModel.email = emailTextField.text
+        registerViewModel.validateAuthenticationForm()
+    }
+    
+    @objc private func passwordTextFieldDidChange() {
+        registerViewModel.password = passwordTextField.text
+        registerViewModel.validateAuthenticationForm()
+    }
+    
     @objc private func registerButtonDidTap() {
-        print(#function)
+        registerViewModel.createUser()
     }
 }
