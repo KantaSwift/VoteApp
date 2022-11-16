@@ -97,6 +97,7 @@ final class OnboardingViewController: UIViewController {
     }
     
     @objc private func loginButtonDidTap() {
-        print(#function)
+        let loginVC = LoginViewController()
+        navigationController?.pushViewController(loginVC, animated: true)
     }
 }
